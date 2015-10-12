@@ -12,6 +12,7 @@ import org.kohsuke.stapler.DataBoundConstructor;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+import java.util.logging.Logger;
 
 /**
  * @author Michael Prankl
@@ -31,7 +32,7 @@ public class DryDuplicateCodeProvider extends DuplicateCodeProvider {
             int lineCount = 0;
             Set<FileAnnotation> annotations = dryResultAction.getResult().getAnnotations();
             for (FileAnnotation fileAnnotation : annotations) {
-                if (fileAnnotation instanceof DuplicateCode) {
+                if (fileAnnotation instanceof hudson.plugins.dry.parser.DuplicateCode) {
                     hudson.plugins.dry.parser.DuplicateCode dup = (hudson.plugins.dry.parser.DuplicateCode) fileAnnotation;
                     if (!processedDryNumbers.contains(dup.getNumber())) {
                         processedDryNumbers.add(dup.getNumber());
