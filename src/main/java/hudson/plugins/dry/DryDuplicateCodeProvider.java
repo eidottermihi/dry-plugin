@@ -3,16 +3,14 @@ package hudson.plugins.dry;
 import hudson.Extension;
 import hudson.model.AbstractBuild;
 import hudson.plugins.analysis.util.model.FileAnnotation;
-import org.jenkinsci.plugins.codehealth.DuplicateCode;
-import org.jenkinsci.plugins.codehealth.DuplicateCodeDescriptor;
-import org.jenkinsci.plugins.codehealth.DuplicateCodeProvider;
-import org.jenkinsci.plugins.codehealth.LinesOfCodeDescriptor;
+import org.jenkinsci.plugins.codehealth.provider.duplicates.DuplicateCode;
+import org.jenkinsci.plugins.codehealth.provider.duplicates.DuplicateCodeDescriptor;
+import org.jenkinsci.plugins.codehealth.provider.duplicates.DuplicateCodeProvider;
 import org.kohsuke.stapler.DataBoundConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-import java.util.logging.Logger;
 
 /**
  * @author Michael Prankl
