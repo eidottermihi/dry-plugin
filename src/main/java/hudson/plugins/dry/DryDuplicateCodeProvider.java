@@ -8,6 +8,7 @@ import org.jenkinsci.plugins.codehealth.provider.duplicates.DuplicateCodeDescrip
 import org.jenkinsci.plugins.codehealth.provider.duplicates.DuplicateCodeProvider;
 import org.kohsuke.stapler.DataBoundConstructor;
 
+import javax.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -60,6 +61,18 @@ public class DryDuplicateCodeProvider extends DuplicateCodeProvider {
     @Override
     public String getOrigin() {
         return "DRY";
+    }
+
+    @Override
+    @Nullable
+    public String getBuildResultUrl() {
+        return DryDescriptor.createResultUrlName(DryDescriptor.PLUGIN_ID);
+    }
+
+    @Nullable
+    @Override
+    public String getProjectResultUrl() {
+        return DryDescriptor.PLUGIN_ID;
     }
 
     @Override
