@@ -35,10 +35,9 @@
       <version>1.73</version>
     </dependency>
     <dependency>
-        <groupId>org.jenkins-ci.plugins</groupId>
-        <artifactId>codehealth</artifactId>
+        <groupId>org.jenkins-ci.plugins.codehealth</groupId>
+        <artifactId>provider</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.jvnet.hudson.plugins</groupId>
