@@ -4,14 +4,14 @@
   <parent>
     <groupId>org.jvnet.hudson.plugins</groupId>
     <artifactId>analysis-pom</artifactId>
-    <version>1.63</version>
+    <version>1.64</version>
     <relativePath>../analysis-pom</relativePath>
   </parent>
 
   <artifactId>dry</artifactId>
   <packaging>hpi</packaging>
-  <name>Duplicate Code Scanner Plug-in</name>
-  <version>2.43-SNAPSHOT</version>
+  <name>DRY Plug-in</name>
+  <version>2.44-SNAPSHOT</version>
   <url>http://wiki.jenkins-ci.org/x/X4IuAg</url>
   <description>This plug-in generates reports of duplicated code in a project.</description>
 
@@ -32,7 +32,7 @@
     <dependency>
       <groupId>org.jvnet.hudson.plugins</groupId>
       <artifactId>analysis-core</artifactId>
-      <version>1.73</version>
+      <version>1.75</version>
     </dependency>
     <dependency>
       <groupId>org.jvnet.hudson.plugins</groupId>
